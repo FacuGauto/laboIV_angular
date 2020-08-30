@@ -12,7 +12,7 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  title = 'Calculo edades';
+  title = 'PRIMER EJERCICIO';
 
   public edadUno;
   public edadDos;
