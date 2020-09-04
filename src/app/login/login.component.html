@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div class="contenedor">
+    <h1>{{title}}</h1>
+    <form action="">
+        <p>
+            <label>Nombre </label>
+            <input type="text" name="nombre" placeholder="admin" [(ngModel)]="this.usuario.nombre">
+        </p>
+        <p>
+            <label>Clave </label>
+            <input type="text" name="clave" placeholder="1234" [(ngModel)]="this.usuario.clave">
+        </p>
+        <p>
+            <button (click)="Ingresar()">
+                Ingresar
+            </button>
+        </p>
+    </form>
+</div>
+
