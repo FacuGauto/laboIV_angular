@@ -8,12 +8,15 @@ import { environment } from '../../environments/environment';
 })
 export class MiServicioService {
   private url = environment.urlpaises;
-  //private url: string = 'https://api.mocki.io/v1/570c5e5c';
-  //public usuario;
-
+  private url_entidades = environment.url_emtidades;
+  
   constructor(private http: HttpClient) { }
 
   public obtenerPaises() {
     return this.http.get(this.url);
+  }
+
+  public obtenerEntidades() {
+    return this.http.get(this.url_entidades);
   }
 }

@@ -1,0 +1,11 @@
+.contenedor {
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.entidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -21,6 +21,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { EntidadesComponent } from './pages/entidades/entidades.component';
+import { DetalleEntidadComponent } from './detalle-entidad/detalle-entidad.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EntidadesComponent } from './pages/entidades/entidades.component';
     GrillaPaisesComponent,
     HomeComponent,
     DetallePaisComponent,
-    EntidadesComponent
+    EntidadesComponent,
+    DetalleEntidadComponent
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'home', component: HomeComponent},
   {path: 'paises', component: GrillaPaisesComponent},
-  {path: 'entidades', component: EntidadesComponent},
+  {path: 'bienvenido', component: EntidadesComponent},
   {path: '**', component: ErrorComponent}
 ];
 

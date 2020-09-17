@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  //urlpaises: 'https://api.mocki.io/v1/570c5e5c'
+  url_emtidades: 'https://api.mocki.io/v1/570c5e5c',
   urlpaises: 'https://restcountries.eu/rest/v2/',
   firebase: {
     apiKey: "AIzaSyDkmu_SRKecF2omJq-LjAO4kwPVEDbnZS0",

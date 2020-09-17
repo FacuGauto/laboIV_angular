@@ -1,1 +1,8 @@
-<p>entidades works!</p>
+<div class="contenedor">
+    <h1>Bienvenido al listado entidad</h1>
+    <div class="entidades">
+        <app-listado-entidad [listadoEntidades]="listadoEntidades" (emitirVerEntidad)="SeleccionarEntidad($event)"></app-listado-entidad>
+        <app-detalle-entidad [entidad]="entidadSeleccionada"></app-detalle-entidad>
+    </div>
+</div>
+
