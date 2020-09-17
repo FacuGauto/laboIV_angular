@@ -1,0 +1,8 @@
+<div class="contenedor">
+    <h1> Page Home</h1>
+    <section class="paises">
+        <app-grilla-paises [listadoPaises]="listadoPaises" (emitirVerPais)="PaisSeleccionado($event)"></app-grilla-paises>
+        <app-detalle-pais [pais]="paisSelecionado"></app-detalle-pais>
+    </section>
+</div>
+

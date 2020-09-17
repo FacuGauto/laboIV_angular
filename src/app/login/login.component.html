@@ -1,19 +1,42 @@
 <div class="contenedor">
-    <h1>{{title}}</h1>
-    <form action="">
-        <p>
-            <label>Nombre </label>
-            <input type="text" name="nombre" placeholder="admin" [(ngModel)]="this.usuario.nombre">
-        </p>
-        <p>
-            <label>Clave </label>
-            <input type="text" name="clave" placeholder="1234" [(ngModel)]="this.usuario.clave">
-        </p>
-        <p>
-            <button (click)="Ingresar()">
-                Ingresar
-            </button>
-        </p>
-    </form>
+    <div *ngIf="!registro">
+        <h2>Login</h2>
+        <form action="">
+            <div class="gridContainer">
+                <p>
+                    <label>Email </label>
+                    <input type="text" name="nombre" placeholder="admin" [(ngModel)]="usuario.email">
+                </p>
+                <p>
+                    <label>Clave </label>
+                    <input type="password" name="clave" placeholder="1234" [(ngModel)]="usuario.pass">
+                </p>
+            </div>
+            
+            <button (click)="Ingresar()">Ingresar</button>
+            <button (click)="registro=true">Registrarme</button>
+        </form>
+    </div>
+    <div *ngIf="registro">
+        <h2>Registrarse</h2>
+        <form action="">
+            <div class="gridContainer">
+                <p>
+                    <label>Nombre </label>
+                    <input type="text" name="nombre" placeholder="admin" [(ngModel)]="usuario.nombre">
+                </p>
+                <p>
+                    <label>Email </label>
+                    <input type="text" name="clave" placeholder="1234" [(ngModel)]="usuario.email">
+                </p>
+                <p>
+                    <label>Clave </label>
+                    <input type="password" name="clave" placeholder="1234" [(ngModel)]="usuario.pass">
+                </p>
+            </div>
+            <button (click)="Registrar()">Aceptar</button>
+            <button (click)="registro=false">Iniciar sesion</button>
+        </form>
+    </div>
 </div>
 

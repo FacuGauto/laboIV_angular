@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <td>Nombre</td>
+        <td>Region</td>
+        <td>Capital</td>
+        <td>Accion</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of listadoPaises">
+            <td>{{pais.name}}</td>
+            <td>{{pais.region}}</td>
+            <td>{{pais.capital}}</td>
+            <td>
+                <button (click)="VerPais(pais)">Ver</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
