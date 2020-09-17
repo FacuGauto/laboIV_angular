@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: true,
+  production: false,
   //urlpaises: 'https://api.mocki.io/v1/570c5e5c'
   urlpaises: 'https://restcountries.eu/rest/v2/',
   firebase: {
