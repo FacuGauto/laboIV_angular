@@ -1,9 +1,10 @@
-<table style="width: 100%; padding: 10px;">
+<table  style="width: 100%; padding: 10px;">
     <thead>
         <tr>
             <th style="text-align: left;">Id</th>
             <th style="text-align: left;">Nombre</th>
             <th style="text-align: left;">Apellido</th>
+            <th style="text-align: left;">Accion</th>
         </tr>
     </thead>
     <tbody>
@@ -12,9 +13,8 @@
             <td>{{entidad.Nombre}}</td>
             <td>{{entidad.Apellido}}</td>
             <td>
-                <button (click)="VerEntidad(entidad)">Ver</button>
+                <button (click)="VerEntidad(entidad)" mat-stroked-button>Ver</button>
             </td>
         </tr>
     </tbody>
 </table>
-

@@ -1,8 +1,8 @@
 <div class="contenedor">
     <h1>Bienvenido al listado entidad</h1>
     <div class="entidades">
-        <app-listado-entidad [listadoEntidades]="listadoEntidades" (emitirVerEntidad)="SeleccionarEntidad($event)"></app-listado-entidad>
-        <app-detalle-entidad [entidad]="entidadSeleccionada"></app-detalle-entidad>
+        <app-listado-entidad [listadoEntidades]="listadoEntidad" (emitirVerEntidad)="SeleccionarEntidad($event)"></app-listado-entidad>
+        <app-detalle-entidad [entidad]="entidadSeleccionada" (usuarioABorrar)="OpUsuarioABorrar($event)"></app-detalle-entidad>
     </div>
 </div>
 

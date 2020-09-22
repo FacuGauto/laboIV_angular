@@ -22,6 +22,12 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { EntidadesComponent } from './pages/entidades/entidades.component';
 import { DetalleEntidadComponent } from './detalle-entidad/detalle-entidad.component';
+import { BotonEntidadComponent } from './boton-entidad/boton-entidad.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -36,13 +42,18 @@ import { DetalleEntidadComponent } from './detalle-entidad/detalle-entidad.compo
     HomeComponent,
     DetallePaisComponent,
     EntidadesComponent,
-    DetalleEntidadComponent
+    DetalleEntidadComponent,
+    BotonEntidadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatListModule,
+    MatTableModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, //firestore

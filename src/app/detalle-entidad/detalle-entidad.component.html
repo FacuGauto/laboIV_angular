@@ -1,24 +1,19 @@
-<table style="width: 100%; padding: 10px;">
-    <thead>
-        <tr>
-            <th style="text-align: left;">Id</th>
-            <th style="text-align: left;">Sexo</th>
-            <th style="text-align: left;">email</th>
-            <th style="text-align: left;">Nombre</th>
-            <th style="text-align: left;">Apellido</th>
-            <th style="text-align: left;">Fecha de nacimiento</th>
-            <th style="text-align: left;">Foto de perfil</th>
-        </tr>
-    </thead>
-    <tbody>
-        <td>{{entidad.id}}</td>
-        <td>{{entidad.Sexo}}</td>
-        <td>{{entidad.email}}</td>
-        <td>{{entidad.Nombre}}</td>
-        <td>{{entidad.Apellido}}</td>
-        <td>{{entidad.FechaNac}}</td>
-        <td><img [src]="entidad.FotoPerfil"></td>
-    </tbody>
-</table>
-
+<div class="contenedor">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar>{{entidad.id}}</div>
+            <mat-card-title>{{entidad.Apellido}}</mat-card-title>
+            <mat-card-subtitle>{{entidad.Nombre}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="entidad.FotoPerfil" alt="Foto de la persona">
+        <mat-card-content>
+            <p>{{entidad.Sexo}}</p>
+            <p>{{entidad.email}}</p>
+            <p>{{entidad.FechaNac}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <app-boton-entidad [entidadUsuario]="entidad" (usuarioBorrado)="borrarEntidad($event)"></app-boton-entidad>
+        </mat-card-actions>
+      </mat-card>
+</div>
 
